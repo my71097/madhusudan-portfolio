@@ -1,19 +1,10 @@
 <!DOCTYPE html>
-<nav style="position:sticky; top:0; background:#111; padding:15px; text-align:center;">
-  <a href="#summary" style="color:white; margin:0 15px;">Summary</a>
-  <a href="#experience" style="color:white; margin:0 15px;">Experience</a>
-  <a href="#education" style="color:white; margin:0 15px;">Education</a>
-  <a href="#skills" style="color:white; margin:0 15px;">Skills</a>
-</nav>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madhusudan | Mechanical Design Engineer</title>
-<section id="summary">
-<section id="experience">
-<section id="education">
-<section id="skills">
+
 <style>
 * {
   margin: 0;
@@ -21,165 +12,185 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
-section {
-  animation: fadeIn 1s ease-in;
-}
 
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
-}
 body {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
-  line-height: 1.6;
 }
 
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00c6ff;
+}
+
+/* HEADER */
 header {
   text-align: center;
-  padding: 50px 20px;
+  padding: 80px 20px;
 }
 
 header h1 {
-  font-size: 36px;
+  font-size: 42px;
+  letter-spacing: 1px;
 }
 
 header p {
   margin-top: 10px;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
 section {
-  padding: 40px 20px;
-  max-width: 1000px;
+  padding: 50px 20px;
+  max-width: 1100px;
   margin: auto;
+  animation: fadeIn 1s ease;
 }
 
 h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border-bottom: 2px solid #00c6ff;
   display: inline-block;
 }
 
+/* CARDS */
 .card {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
   padding: 20px;
-  border-radius: 12px;
   margin-bottom: 20px;
-  transition: 0.3s;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  background: rgba(255,255,255,0.2);
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.15);
 }
 
 ul {
   padding-left: 20px;
 }
 
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<nav>
+  <a href="#summary">Summary</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+</nav>
+
+<!-- HEADER -->
 <header>
   <h1>Madhusudan Yadav</h1>
   <p>Mechanical Design Engineer | CAD | Product Development</p>
   <p>Gorakhpur, India | +91 9919003620 | my71097@gmail.com</p>
+
+  <a href="#" class="btn">Download Resume</a>
 </header>
 
-<section>
+<!-- SUMMARY -->
+<section id="summary">
   <h2>Summary</h2>
   <div class="card">
-    <p>NPD Engineer with 2+ years of experience in automotive product development and process planning. Skilled in APQP, PPAP documentation, DFMEA, and CAD modeling using SolidWorks and AutoCAD. Experienced in cross-functional coordination, validation, and industrialization aligned with IATF standards.</p>
+    <p>NPD Engineer with 2+ years of experience in automotive product development, CAD modeling, and APQP/PPAP documentation. Strong in DFMEA, GD&T, and manufacturing-ready design.</p>
   </div>
 </section>
 
-<section>
-  <h2>Work Experience</h2>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
 
   <div class="card">
-    <h3>Makino Auto Industries Pvt. Ltd. – Noida</h3>
-    <p><strong>Engineer – NPD Engineering | Oct 2024 – Present</strong></p>
+    <h3>Makino Auto Industries Pvt. Ltd.</h3>
+    <p><strong>NPD Engineer | 2024–Present</strong></p>
     <ul>
-      <li>Designed 3D models and 2D drawings using SolidWorks & AutoCAD with GD&T.</li>
-      <li>Performed DFMEA and resolved design risks.</li>
-      <li>Led prototype development with tool room coordination.</li>
-      <li>Managed APQP & PPAP documentation (PFD, PFMEA, Control Plan).</li>
-      <li>Conducted Cp/Cpk and supported audits.</li>
+      <li>3D modeling & 2D drawings using SolidWorks & AutoCAD</li>
+      <li>DFMEA execution and design risk reduction</li>
+      <li>Prototype development coordination</li>
+      <li>APQP & PPAP documentation</li>
     </ul>
   </div>
 
   <div class="card">
-    <h3>PPAP Automotive Ltd. – Bhiwadi</h3>
-    <p><strong>Graduate Engineer Trainee | Jan 2024 – Oct 2024</strong></p>
+    <h3>PPAP Automotive Ltd.</h3>
+    <p><strong>Graduate Engineer Trainee</strong></p>
     <ul>
-      <li>Supported production & quality inspection.</li>
-      <li>Worked on process improvement and lean practices.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>PMKVY – Prototype Development</h3>
-    <p><strong>Intern | Apr 2023 – Jul 2023</strong></p>
-    <ul>
-      <li>3D CAD design and additive manufacturing training.</li>
-      <li>Created and printed mechanical prototypes.</li>
+      <li>Production support & quality inspection</li>
+      <li>Lean and process improvement</li>
     </ul>
   </div>
 
 </section>
 
-<section>
+<!-- EDUCATION -->
+<section id="education">
   <h2>Education</h2>
   <div class="card">
-    <p><strong>B.Tech in Mechanical Engineering (2020–2024)</strong></p>
-    <p>Ajay Kumar Garg Engineering College, Ghaziabad</p>
-    <ul>
-      <li>Industry 4.0 & Advanced Manufacturing Systems</li>
-      <li>Final Project: MRF Setup Simulation</li>
-    </ul>
+    <p><strong>B.Tech Mechanical Engineering</strong></p>
+    <p>AKGEC, Ghaziabad (2020–2024)</p>
   </div>
 </section>
 
-<section>
+<!-- SKILLS -->
+<section id="skills">
   <h2>Skills</h2>
   <div class="card">
-    <p><strong>Design:</strong> SolidWorks, AutoCAD, CATIA, NX CAD</p>
-    <p><strong>Documentation:</strong> PFMEA, DFMEA, Control Plan, PFD</p>
-    <p><strong>Engineering:</strong> GD&T, Manufacturing Processes</p>
-    <p><strong>Soft Skills:</strong> Problem Solving, Teamwork</p>
+    <p><strong>CAD:</strong> SolidWorks, AutoCAD, CATIA, NX</p>
+    <p><strong>Engineering:</strong> GD&T, Manufacturing</p>
+    <p><strong>Documentation:</strong> PFMEA, DFMEA, Control Plan</p>
   </div>
 </section>
-
-<section>
-  <h2>Projects</h2>
-
-  <div class="card">
-    <h3>Gear Design & Modeling</h3>
-    <p>Designed involute gear profile and created 3D model using CAD tools.</p>
-  </div>
-
-  <div class="card">
-    <h3>3D Printing Project</h3>
-    <p>Developed and printed mechanical components for prototype validation.</p>
-  </div>
-
-</section>
-  
-<header>
-  <a href="#" style="
-  display:inline-block;
-  margin-top:15px;
-  padding:10px 20px;
-  background:#00c6ff;
-  color:black;
-  text-decoration:none;
-  border-radius:5px;">
-  Download Resume
-  </a>
-</header>
 
 </body>
+</html>
 </html>
