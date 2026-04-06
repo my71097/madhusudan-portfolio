@@ -1,10 +1,19 @@
 <!DOCTYPE html>
+<nav style="position:sticky; top:0; background:#111; padding:15px; text-align:center;">
+  <a href="#summary" style="color:white; margin:0 15px;">Summary</a>
+  <a href="#experience" style="color:white; margin:0 15px;">Experience</a>
+  <a href="#education" style="color:white; margin:0 15px;">Education</a>
+  <a href="#skills" style="color:white; margin:0 15px;">Skills</a>
+</nav>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madhusudan | Mechanical Design Engineer</title>
-
+<section id="summary">
+<section id="experience">
+<section id="education">
+<section id="skills">
 <style>
 * {
   margin: 0;
@@ -12,7 +21,14 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
+section {
+  animation: fadeIn 1s ease-in;
+}
 
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
 body {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
@@ -136,6 +152,34 @@ ul {
     <p><strong>Soft Skills:</strong> Problem Solving, Teamwork</p>
   </div>
 </section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Gear Design & Modeling</h3>
+    <p>Designed involute gear profile and created 3D model using CAD tools.</p>
+  </div>
+
+  <div class="card">
+    <h3>3D Printing Project</h3>
+    <p>Developed and printed mechanical components for prototype validation.</p>
+  </div>
+
+</section>
+  
+<header>
+  <a href="#" style="
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  background:#00c6ff;
+  color:black;
+  text-decoration:none;
+  border-radius:5px;">
+  Download Resume
+  </a>
+</header>
 
 </body>
 </html>
