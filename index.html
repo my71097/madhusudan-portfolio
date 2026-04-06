@@ -16,20 +16,20 @@
 body {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
+  line-height: 1.6;
 }
 
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 50px 20px;
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 36px;
 }
 
 header p {
   margin-top: 10px;
-  font-size: 18px;
   opacity: 0.8;
 }
 
@@ -40,27 +40,26 @@ section {
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border-bottom: 2px solid #00c6ff;
   display: inline-block;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
 }
 
 .card {
   background: rgba(255,255,255,0.1);
   padding: 20px;
   border-radius: 12px;
+  margin-bottom: 20px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   background: rgba(255,255,255,0.2);
+}
+
+ul {
+  padding-left: 20px;
 }
 
 </style>
@@ -71,29 +70,70 @@ h2 {
 <header>
   <h1>Madhusudan Yadav</h1>
   <p>Mechanical Design Engineer | CAD | Product Development</p>
+  <p>Gorakhpur, India | +91 9919003620 | my71097@gmail.com</p>
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <p>I am a Mechanical Engineer with hands-on experience in CAD modeling, manufacturing processes, and product design. I focus on creating efficient and manufacturable designs.</p>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card">3D Modeling (SolidWorks)</div>
-    <div class="card">AutoCAD Drafting</div>
-    <div class="card">Manufacturing Processes</div>
-    <div class="card">GD&T Basics</div>
+  <h2>Summary</h2>
+  <div class="card">
+    <p>NPD Engineer with 2+ years of experience in automotive product development and process planning. Skilled in APQP, PPAP documentation, DFMEA, and CAD modeling using SolidWorks and AutoCAD. Experienced in cross-functional coordination, validation, and industrialization aligned with IATF standards.</p>
   </div>
 </section>
 
 <section>
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">Gear Design & Modeling</div>
-    <div class="card">3D Printing Project</div>
-    <div class="card">Tool Room Study</div>
+  <h2>Work Experience</h2>
+
+  <div class="card">
+    <h3>Makino Auto Industries Pvt. Ltd. – Noida</h3>
+    <p><strong>Engineer – NPD Engineering | Oct 2024 – Present</strong></p>
+    <ul>
+      <li>Designed 3D models and 2D drawings using SolidWorks & AutoCAD with GD&T.</li>
+      <li>Performed DFMEA and resolved design risks.</li>
+      <li>Led prototype development with tool room coordination.</li>
+      <li>Managed APQP & PPAP documentation (PFD, PFMEA, Control Plan).</li>
+      <li>Conducted Cp/Cpk and supported audits.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>PPAP Automotive Ltd. – Bhiwadi</h3>
+    <p><strong>Graduate Engineer Trainee | Jan 2024 – Oct 2024</strong></p>
+    <ul>
+      <li>Supported production & quality inspection.</li>
+      <li>Worked on process improvement and lean practices.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>PMKVY – Prototype Development</h3>
+    <p><strong>Intern | Apr 2023 – Jul 2023</strong></p>
+    <ul>
+      <li>3D CAD design and additive manufacturing training.</li>
+      <li>Created and printed mechanical prototypes.</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <p><strong>B.Tech in Mechanical Engineering (2020–2024)</strong></p>
+    <p>Ajay Kumar Garg Engineering College, Ghaziabad</p>
+    <ul>
+      <li>Industry 4.0 & Advanced Manufacturing Systems</li>
+      <li>Final Project: MRF Setup Simulation</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="card">
+    <p><strong>Design:</strong> SolidWorks, AutoCAD, CATIA, NX CAD</p>
+    <p><strong>Documentation:</strong> PFMEA, DFMEA, Control Plan, PFD</p>
+    <p><strong>Engineering:</strong> GD&T, Manufacturing Processes</p>
+    <p><strong>Soft Skills:</strong> Problem Solving, Teamwork</p>
   </div>
 </section>
 
