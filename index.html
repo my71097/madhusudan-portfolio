@@ -3,23 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Madhusudan Portfolio</title>
+<title>Madhusudan | Mechanical Design Engineer</title>
 
 <style>
-body {
+* {
   margin: 0;
-  font-family: Arial;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
 }
 
 header {
-  background: #222;
-  color: white;
-  padding: 20px;
   text-align: center;
+  padding: 60px 20px;
 }
 
-.container {
-  padding: 20px;
+header h1 {
+  font-size: 40px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00c6ff;
+  display: inline-block;
 }
 
 .grid {
@@ -29,10 +52,17 @@ header {
 }
 
 .card {
-  background: #f4f4f4;
-  padding: 15px;
-  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
 }
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.2);
+}
+
 </style>
 </head>
 
@@ -40,20 +70,13 @@ header {
 
 <header>
   <h1>Madhusudan Yadav</h1>
-  <p>Mechanical Design Engineer | Automobile Product Development</p>
+  <p>Mechanical Design Engineer | CAD | Product Development</p>
 </header>
 
-<div class="container">
-
-<h2>About Me</h2>
-<p>Mechanical Engineer with knowledge of PFMEA, Control Plans, and Tool Room processes.</p>
-
-<h2>Projects</h2>
-<div class="grid">
-  <div class="card">PFMEA Development</div>
-  <div class="card">Control Plan</div>
-  <div class="card">5S Implementation</div>
-</div>
+<section>
+  <h2>About Me</h2>
+  <p>I am a Mechanical Engineer with hands-on experience in CAD modeling, manufacturing processes, and product design. I focus on creating efficient and manufacturable designs.</p>
+</section>
 
 <section>
   <h2>Skills</h2>
@@ -65,7 +88,14 @@ header {
   </div>
 </section>
 
-</div>
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">Gear Design & Modeling</div>
+    <div class="card">3D Printing Project</div>
+    <div class="card">Tool Room Study</div>
+  </div>
+</section>
 
 </body>
 </html>
